@@ -201,43 +201,40 @@ void GPIO_DeInit(GPIO_RegDef_t *pGPIOx)
 
 			if(pGPIOx == GPIOA) {
 
-				GPIOA_PCLK_RESET();
+				GPIOA_REG_RESET();
 
 			} else if (pGPIOx == GPIOB) {
 
-				GPIOA_PCLK_RESET();
+				GPIOB_REG_RESET();
 
 			} else if (pGPIOx == GPIOC) {
 
-				GPIOA_PCLK_RESET();
+				GPIOC_REG_RESET();
 
 			} else if (pGPIOx == GPIOD) {
 
-				GPIOA_PCLK_RESET();
-
-			} else if (pGPIOx == GPIOD) {
-
-				GPIOA_PCLK_RESET();
+				GPIOD_REG_RESET();
 
 			} else if (pGPIOx == GPIOE) {
 
-				GPIOA_PCLK_RESET();
+				GPIOE_REG_RESET();
 
 			} else if (pGPIOx == GPIOF) {
 
-				GPIOA_PCLK_RESET();
+				GPIOF_REG_RESET();
 
 			} else if (pGPIOx == GPIOG) {
 
-				GPIOA_PCLK_RESET();
+				GPIOG_REG_RESET();
 
 			} else if (pGPIOx == GPIOH) {
 
-				GPIOA_PCLK_RESET();
+				GPIOH_REG_RESET();
 
 			} else if (pGPIOx == GPIOI) {
 
-				GPIOA_PCLK_RESET();
+				GPIOI_REG_RESET();
+
 			}
 }
 
@@ -356,6 +353,7 @@ void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint8_t IRQPriority)
 
 	*(NVIC_PR_BASE_ADDR + (iprx * 4 )) |= (IRQPriority << shift_amount);
 }
+
 /*
  *@brief: ISR Routine to Handle GPIO Interrupts.
  *@brief: An uint8_t specifying the GPIO Pin Number.
