@@ -298,7 +298,7 @@ Discarded input sections
  .text.GPIO_IRQPriorityConfig
                 0x00000000       0x5c ./drivers/Src/stm32f407xx_gpio_driver.o
  .text.GPIO_IRQHandling
-                0x00000000       0x16 ./drivers/Src/stm32f407xx_gpio_driver.o
+                0x00000000       0x40 ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_info    0x00000000      0x764 ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_abbrev  0x00000000      0x17b ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_aranges
@@ -315,7 +315,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x1df ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_macro   0x00000000      0x31d ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_macro   0x00000000       0xc4 ./drivers/Src/stm32f407xx_gpio_driver.o
- .debug_line    0x00000000      0xa39 ./drivers/Src/stm32f407xx_gpio_driver.o
+ .debug_line    0x00000000      0xa53 ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_str     0x00000000     0x5783 ./drivers/Src/stm32f407xx_gpio_driver.o
  .comment       0x00000000       0x44 ./drivers/Src/stm32f407xx_gpio_driver.o
  .debug_frame   0x00000000      0x1c8 ./drivers/Src/stm32f407xx_gpio_driver.o

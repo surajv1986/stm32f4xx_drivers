@@ -8,4 +8,4 @@
 ../drivers/Src/stm32f407xx_gpio_driver.c:309:6:GPIO_TogglePin	1
 ../drivers/Src/stm32f407xx_gpio_driver.c:321:6:GPIO_IRQInterruptConfig	12
 ../drivers/Src/stm32f407xx_gpio_driver.c:348:6:GPIO_IRQPriorityConfig	1
-../drivers/Src/stm32f407xx_gpio_driver.c:362:6:GPIO_IRQHandling	1
+../drivers/Src/stm32f407xx_gpio_driver.c:362:6:GPIO_IRQHandling	2
