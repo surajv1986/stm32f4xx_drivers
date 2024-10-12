@@ -173,6 +173,25 @@ typedef struct {
 
 }GPIO_RegDef_t;
 
+/*
+ * Peripheral Structure Definition for SPI.
+ *
+ * */
+typedef struct {
+	volatile uint32_t CR1;
+	volatile uint32_t CR2;
+	volatile uint32_t SR;
+	volatile uint32_t DR;
+	volatile uint32_t CRCPR;
+	volatile uint32_t RXCRCR;
+	volatile uint32_t TXCRCR;
+	volatile uint32_t I2SCFGR;
+	volatile uint32_t I2SPR;
+
+}SPI_RegDef_t;
+
+
+
 #define GPIOA   ((GPIO_RegDef_t *)GPIOA_BASEADDR)
 #define GPIOB   ((GPIO_RegDef_t *)GPIOB_BASEADDR)
 #define GPIOC   ((GPIO_RegDef_t *)GPIOC_BASEADDR)
@@ -185,6 +204,9 @@ typedef struct {
 #define RCC   	((RCC_RegDef_t *)RCC_BASEADDR)
 #define SYSCFG  ((SYSCFG_RegDef_t *)SYSCFG_BASEADDR)
 
+#define SPI1 ((SPI_RegDef_t *)SPI1_BASEADDR)
+#define SPI2 ((SPI_RegDef_t *)SPI2_BASEADDR)
+#define SPI3 ((SPI_RegDef_t *)SPI3_BASEADDR)
 /*
  * Clock Enable Macros for GPIOx Peripherals.
  * */
@@ -323,5 +345,6 @@ typedef struct {
 #define GPIO_PIN_SET SET
 #define GPIO_PIN_RESET RESET
 
-
+#include "stm32f407xx_gpio_driver.h"
+#include "stm32f407xx_spi_driver.h"
 #endif /* INC_STM32F407XX_H_ */
